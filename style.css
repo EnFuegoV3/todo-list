@@ -44,9 +44,14 @@ nav {
   color: antiquewhite;
 }
 
-.project {
+.projects {
+  margin-top: 2em;
+}
+
+.add-project {
   background: rgba(255, 255, 255, 0.575);
   font-size: 1rem;
+  margin-top: 3em;
   
 }
 

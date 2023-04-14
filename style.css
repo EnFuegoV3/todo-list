@@ -44,8 +44,12 @@ nav {
   color: antiquewhite;
 }
 
-.projects {
+.project-list {
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  width: 50%;
 }
 
 .add-project {
@@ -61,6 +65,48 @@ main > div {
   backdrop-filter: saturate(90%) blur(10px);
   border-radius: 10px;
 }
+
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+.project-view {
+  background-color: rgba(49, 95, 109, 0.822);
+  height: 90%;
+  width: 50%;
+  margin-top: 3em;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 2px lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.project-name {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  width: 50%;
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.add-todo {
+  border-radius: 8px;
+  background-color: rgba(34, 145, 34, 0.212);
+  color: antiquewhite;
+}
+
+
 
 footer {
   width: 100%;

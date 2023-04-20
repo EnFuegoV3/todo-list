@@ -1,3 +1,6 @@
+import { projectFactory } from "./projectFactory";
+import { projects } from "./main";
+
 export
 
 function newProject() {
@@ -6,6 +9,9 @@ function newProject() {
     const view = document.querySelector('.view');
     const projList = document.querySelector('.project-list');
     let name = prompt("Enter Project Name");
+    const project = projectFactory(name);
+    
+    
     proj.classList.add('project-view');
     proj.innerHTML = `
                 <h3><input type="text" value="${name}" class="project-name"></h3>
@@ -16,5 +22,7 @@ function newProject() {
     projBtn.classList.add('project');
     projBtn.textContent = `${name}`
     projList.appendChild(projBtn);
-
+    console.log(projects);
 }
+
+
